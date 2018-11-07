@@ -25,12 +25,12 @@ function objToSql(ob) {
     let value = ob[key];
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-      // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // if string with spaces, add quotations (Big Mac => 'Big Mac')
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {burger_name: 'Big Mac'} => ["burger_name='Big Mac'"]
+      // e.g. {devoured: true} => ["devoured=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -77,7 +77,7 @@ let orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: kronkburger, devoured: true}
+  // An example of objColVals would be {burger_name: kronkburger, devoured: true}
   update: function(table, objColVals, condition, cb) {
     let queryString = "UPDATE " + table;
 
