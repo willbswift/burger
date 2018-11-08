@@ -17,3 +17,11 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+.nodisplay {
+  display: none;
+}
+
+.devoured button {
+  display: none;
+}

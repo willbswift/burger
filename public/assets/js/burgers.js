@@ -4,7 +4,7 @@ $(function() {
     let id = $(this).data("id");
     let nowDevoured = $(this).data("nowdevoured");
 
-    var nowDevouredState = {
+    let nowDevouredState = {
       devoured: nowDevoured
     };
 
@@ -14,7 +14,7 @@ $(function() {
       data: nowDevouredState
     }).then(
       function() {
-        console.log("changed sleep to", nowDevoured);
+        console.log("changed devoured to", nowDevoured);
         // Reload the page to get the updated list
         location.reload();
       }

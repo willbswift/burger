@@ -2,7 +2,7 @@
 
 <h2>Created Burgers</h2>
 
-<ul>
+<ul class="readyToEat">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
@@ -12,7 +12,7 @@
 
 <h2>Burgers that have been eaten!</h2>
 
-<ul>
+<ul class="devoured">
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
@@ -29,9 +29,8 @@
   </div>
 
   <div class="form-group">
-    <label for="slee">devoured?</label><br>
-    <input type="radio" burger_name="devoured" value="1" checked> devoured!<br>
-    <input type="radio" burger_name="devoured" value="0"> Not Eaten
+    <input type="radio" class="nodisplay" burger_name="devoured" value="0" checked><br>
+    {{!-- <input type="radio" class="nodisplay"burger_name="devoured" value="1"> Not Eaten --}}
   </div>
 
   <button type="submit">Add Burger</button>
