@@ -1,7 +1,12 @@
+body {
+  background-color: #3C4F89;
+  color: white;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background:#8DB05E;
 }
 
 .label {
@@ -11,17 +16,26 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
 }
 
 .form-group {
   margin-bottom: 5px;
 }
 
-.nodisplay {
-  display: none;
+.container {
+  text-align: center;
+}
+.center {
+  display: inline-block;
 }
 
-/* .devoured button {
+img {
+  height: 200px;
+  width: auto;
+}
+
+.nodisplay {
   display: none;
-} */
+} 
+
+
