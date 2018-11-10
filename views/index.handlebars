@@ -14,7 +14,7 @@
   <img class="center" src="/assets/img/nerf.jpg" alt="Nerf Burger" title="Nerf Burger">
   </div>
   <br>
-  <h2 class="center">Make a Burger</h2>
+  <h2 class="center">CREATE A NEW BURGER!!</h2>
   <form class="create-form">
 
     <div class="form-group">
@@ -26,28 +26,34 @@
       <input type="radio" class="nodisplay" burger_name="devoured" value="0" checked><br>
     </div>
 
-    <button class="center" type="submit">Add Burger</button>
+    <button class="center" type="submit">MAKE DA BURGER</button>
   </form>
 </div>
 
-<h2>Created Burgers</h2>
+<section class="container1">
 
-<ul class="readyToEat">
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <div class="one">
+    <h2>Created Burgers!</h2>
+    <ul class="readyToEat">
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
 
-<h2>Burgers that have been eaten!</h2>
+  <div class="two">
+    <h2>Burgers that have been eaten!</h2>
+    <ul class="devoured">
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
 
-<ul class="devoured">
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+</section>
 
 

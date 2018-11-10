@@ -39,4 +39,16 @@ img {
   display: none;
 } 
 
+.container1 {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+.one {
+  width: 45%;
+  float: left;
+}
+.two {
+  margin-left: 50%;
+}
 
