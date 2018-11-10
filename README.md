@@ -17,7 +17,7 @@ The User can look over the list of burgers and decide which one they wish to dev
 
 Once devoured the burger is transfer to the eaten list on the right side.  
 
-The pics at the top depict some of the out-of-this-world burger that were pre-loaded into the database.  
+The pics at the top depict some of the out-of-this-world burger that were pre-loaded into the database.  The Biscuit Baron restaurant chain is the Star Wars equivalent of McDonalds.    
 
 - William B. Swift (creator)
 

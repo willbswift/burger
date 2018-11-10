@@ -39,13 +39,8 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-
 // IMPORTANT
 // * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
-// * `selectAll()` = all
-// * `insertOne()` = create
-// * `updateOne()` = update
-
 // Object for all our SQL statement functions.
 let orm = {
   selectAll: function(tableInput, cb) {
